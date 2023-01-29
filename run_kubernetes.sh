@@ -12,6 +12,7 @@
 
 # Step 3:
 # List kubernetes pods
+kubectl get pod
 
 # Step 4:
 # Forward the container port to a host
