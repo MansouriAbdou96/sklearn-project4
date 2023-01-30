@@ -11,11 +11,11 @@ dockerpath="mansouri96/sklearn:1.0"
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
-docker login --username=mansouri96
+docker login 
 
 # Using command to Get the ID of Image sklearn
 # docker images | grep "sklearn:1.0" | awk '{print $3}'
-docker tag <image-id> $dockerpath
+docker tag 4a9c2013a49f $dockerpath
 
 # Step 3:
 # Push image to a docker repository

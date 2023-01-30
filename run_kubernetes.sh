@@ -13,6 +13,9 @@ kubectl run sklearn-demo\
     --image=$dockerpath\
     --port=80 --labels app=sklearn-demo
 
+# to add lables to deployment now you need to use 
+# kubectl label deployment <deployment-name> <label-key>=<label-value>
+
 # Step 3:
 # List kubernetes pods
 kubectl get pods
