@@ -6,4 +6,5 @@ kubectl create deployment sklearn-demo2 --image=%dockerpath% --replicas=1 --port
 
 kubectl get pods 
 
-kubectl port-forward sklearn-demo2 8000:80
+for /f "tokens=*" %%i in ('kubectl get pods -o jsonpath="{.items[0].metadata.name}"') do set pod_name=%%i
+kubectl port-forward %pod_name% 8000:80
