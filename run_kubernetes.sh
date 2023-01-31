@@ -23,5 +23,5 @@ kubectl get pods
 
 # Step 4:
 # Forward the container port to a host
-kubectl port-forward -l app=sklearn-demo 8000:80
+kubectl port-forward $podname 8000:80
 
